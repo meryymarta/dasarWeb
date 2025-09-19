@@ -1,0 +1,70 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #ddd);
+    line-height: 1.6;
+}
+
+/* Container utama jadi flexbox */
+.container-satu {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Artikel utama */
+.kolom-utama {
+    flex: 2; 
+    order: 2; 
+    margin: 0 20px;
+}
+
+.kolom-utama h2 {
+    color: mediumpurple;
+}
+
+.kolom-utama img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Sidebar kiri */
+.sidebar-satu {
+    flex: 1;
+    order: 1; 
+    background-color: #f5f7ff;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sidebar-satu h3 {
+    color: #2f4fbb;
+}
+
+.sidebar-satu ul {
+    padding-left: 20px;
+}
+
+/* Sidebar kanan */
+.sidebar-dua {
+    flex: 1;
+    order: 3; 
+    background-color: #fff3e6;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.sidebar-dua h3 {
+    color: #d9534f;
+}
