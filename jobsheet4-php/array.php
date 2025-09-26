@@ -85,8 +85,6 @@ foreach($daftarNilai as $nilai){
     if($nilai[1] > $rataRata){
         echo "Nama: {$nilai[0]}, Nilai: {$nilai[1]} <br>";
  
-    }
-
-    
+    }   
 }
 ?>
