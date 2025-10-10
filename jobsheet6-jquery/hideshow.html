@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="jquery-3.7.1.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            
+            // 1. Tombol Sembunyikan (.tombol1) -> Hide
+            $(".tombol1").click(function() {
+                // Sembunyikan semua elemen div dengan class "kotak"
+                $(".kotak").hide();
+            });
+
+            // 2. Tombol Tampilkan (.tombol2) -> Show
+            $(".tombol2").click(function() {
+                // Tampilkan semua elemen div dengan class "kotak"
+                $(".kotak").show();
+            });
+
+            // 3. Tombol Fade Out (.tombol3)
+            $(".tombol3").click(function() {
+                // Fade out (menghilangkan secara perlahan) div1, div2, dan div3 dengan kecepatan berbeda
+                $("#div1").fadeOut("slow");
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000); // 3000ms = 3 detik
+            });
+
+            // 4. Tombol Fade In (.tombol4)
+            $(".tombol4").click(function() {
+                // Fade in (menampilkan secara perlahan) div1, div2, dan div3 dengan kecepatan berbeda
+                $("#div1").fadeIn("slow");
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000); // 3000ms = 3 detik
+            });
+
+            // 5. Tombol Fade To (.tombol5)
+            $(".tombol5").click(function() {
+                // FadeTo (mengatur tingkat transparansi/opacity) div1, div2, dan div3
+                $("#div1").fadeTo("slow", 0.15); // Transparansi 15%
+                $("#div2").fadeTo("slow", 0.4);  // Transparansi 40%
+                $("#div3").fadeTo("slow", 0.7);  // Transparansi 70%
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>JQuery Effect</p>
+    
+    <div id="div1" class="kotak"></div><br>
+    <div id="div2" class="kotak"></div><br><br>
+    <div id="div3" class="kotak"></div><br><br>
+    
+    <button class="tombol1">Sembunyikan</button>
+    <button class="tombol2">Tampilkan</button>
+    <button class="tombol3">Fade Out</button>
+    <button class="tombol4">Fade In</button>
+    <button class="tombol5">Fade To</button>
+</body>
+</html>
