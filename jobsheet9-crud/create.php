@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tambah Data Anggota</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Tambah Data Anggota<h2>
+            <form action="proses.php?aksi=tambah" method="post">
+                <label for="nama">Nama:</label>
+                <input for="text" name="nama" id="nama" required>
+                <label for="jenis_kelamin">Jenis Kelamin:</label>
+                <div class="radio-group">
+                    <input type="radio" name="jenis_kelamin" value="L" id="laki" required><label for="laki">Laki-laki</lebel>
+                    <input type="radio" name="jenis_kelamin" value="P" id="Perempuan" required><label for="perempuan">Perempuan</label>
+                </div>
+                <label for="alamat">Alamat:</label>
+                <input type="text" name="alamat" id="alamat" required>
+                <label for="no_telp">No.Telp:</label>
+                <input type="typet" name="no_telp" id="no_telp" required>
+                <button type="submit">Simpan Data</button>
+                <a href="index.php" class="btn-kembali">kembali</a>
+</form>
+</div>
+</body>
+</html>
